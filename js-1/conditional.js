@@ -4,15 +4,16 @@
 3. num = 2 se corrige por === operador estricto de comparación. Cerciora que el valor y el tipo de dato sea igual.
 4. en blanco se corrige: por ;
 5. color:verde se corrige por color=verde 
+6. Se corrige black por negro y el color azul.
 */
 
 function calcularColor(num) {
   if (num === 1) {
-    color = "black";
+    color = "negro";
   } else if (num === 2) {
     color = "blanco";
   } else if (num === 3) {
-    color = "rojo";
+    color = "azul";
   } else {
     color = "verde";
   }

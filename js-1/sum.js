@@ -1,18 +1,16 @@
-/*Use la formula de gauss. 
-1.Realmente se le atribuye por una pelicula pero al parecer no fue Gauss quien la realizo.
-2. Se da un num como argumento y se realiza la formula. 
-3. Luego con let lastNum busco imprimir solo el último digito.Para eso le asigno a lastNum el valor de i ya que solo le dara el valor del último número.
-4.Se realiza el for y se manda a imprimir. */
+/* Use un while. Acá el asunto es con una variable llamada plus. Una variable desde 0 que hara el conteo de la suma
+y se le va agregando cada número--> suma +=1 suma +=2 suma+=3 suma +=4 suma+=5 hasta el número que 
+de 1+*/
 
 function suma(num) {
-  let gauss = (num * (num + 1)) / 2;
-  let lastNum;
-  for (let i = 1; i <= gauss; i++) {
-    lastNum = i;
+  let plus = 0;
+  let i = 1;
+  while (i <= num) {
+    plus += i; // suma +=1 suma +=2 suma+=3 suma +=4 suma+=5
+    i++;
   }
-  console.log(lastNum);
+  console.log(plus);
 }
 
 suma(5);
-suma(10);
-suma(15);
+suma(0);
