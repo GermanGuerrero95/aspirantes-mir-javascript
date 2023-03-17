@@ -1,10 +1,14 @@
-let receta = {
+const receta = {
   nombre: "Sandwich",
-  ingredientes: [
-    { nombre: "Pan", cantidad: 2 },
-    { nombre: "Queso", cantidad: 1 },
-  ],
+  ingredientes: [],
 };
+
+receta.ingredientes.push(
+  { nombre: "Pan", cantidad: 2 },
+  { nombre: "Queso", cantidad: 1 }
+);
+
+console.log(receta);
 
 //6. Debajo del objeto imprime en la consola el nombre del primer ingrediente, debería aparecer "Pan".
 console.log(receta.ingredientes[0].nombre);
